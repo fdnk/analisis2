@@ -1,0 +1,240 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="es" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Introducción &mdash; documentación de Análisis II pensando - </title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Derivadas en varias variables" href="derivabilidad.html" />
+    <link rel="prev" title="Detección de Fallas - SESCA" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Análisis II pensando
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Indice:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introducción</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#conocimientos-previos">Conocimientos Previos</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="derivabilidad.html">Derivadas en varias variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="diferenciabilidad.html">Introducción</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Análisis II pensando</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Introducción</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/introduccion.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduccion">
+<h1>Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>El objetivo de este escrito es explicar Análisis II desde la perspectiva de
+un ingeniero. Todas las personas que conozco aprendieron a integrar cursando
+Física II, esa materia marca un antes y un después. Pero ¿por qué? IMHO
+creo que es porque uno finalmente entiende qué es lo que está queriendo hacer.</p>
+<p>Es decir, tengo una esfera con una densidad de carga, integro la carga
+en dicho volumen, y me da 0.7 Coulomb. No hay magia, todos entienden que estan
+sumando infinitos diferenciales de carga sobre toda la esfera, y eso da
+cierto numero. Mejor aún, muchas veces viendo la geometría del problema, uno
+alcanza a atinar que el campo es normal a la superficie y por ende el
+producto escalar da 1, y simplifica.</p>
+<p>Cuando cursé Análisis II (y cuando tuve que explicarla) sentía que eran una
+maraña de fórmulas sin demasiada conexión, que servian para hacer cierta
+clase de cosas que no terminaban de cerrarme del todo (como que la masa de
+un alambre sea 22K, con K una constante genérica).</p>
+<p>Este material apunta a poder explicar los conceptos matemáticos como un invento
+para resolver un problema particular (sin ahondar de más), y utilizando
+más o menos intuitivamente las herramientas principales de la ingeniería:
+El polinomio de Taylor, las funciones lineales —y a sus amigos íntimos— los
+diferenciales (sí, esas cosas que pasamos dividiendo cuando no nos miran, pero
+que por alguna razón no se puede hacer… pero tenemos que hacerlo igual).</p>
+<div class="section" id="conocimientos-previos">
+<h2>Conocimientos Previos<a class="headerlink" href="#conocimientos-previos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Se van a utilizar extensamente las funciones lineales, es necesario por lo
+menos saber resolver un sistema de la forma <span class="math notranslate nohighlight">\(Ax = b\)</span>.</p>
+<p>Además, es necesario saber lo básico de rectas y planos en <span class="math notranslate nohighlight">\(\RR{n}\)</span>
+(con <span class="math notranslate nohighlight">\(n\)</span> generalmente, pero no necesariamente, 2 o 3),
+tanto en forma paramétrica como
+sistema de ecuaciones. En fin, estas cosas supongo que también las iran
+aprendiendo en esta materia de a poco.</p>
+<p>Supuestamente esas cosas se ven en el CBC, pero uno nunca deja de sorprenderse.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="derivabilidad.html" class="btn btn-neutral float-right" title="Derivadas en varias variables" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Detección de Fallas - SESCA" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Fernando Iván Danko
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

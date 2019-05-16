@@ -1,0 +1,9 @@
+name: tesisdoc-env
+dependencies:
+- python=3
+- sphinx
+- sphinx_rtd_theme
+- perl
+- pip
+- pip:
+  - sphinxcontrib-katex
