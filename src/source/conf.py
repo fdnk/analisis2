@@ -53,7 +53,7 @@ mathjax_config = {'Tex':{'Macros':{}}} # Create empty
 
 with open('mathCmds.sty', 'r') as f:
 	for line in f:
-		macros = re.findall(r'\\newcommand{\\(.*?)}(\[(\d)\])?{(.+)}', line)
+		macros = re.findall(r'\\(?:re)*newcommand{\\(.*?)}(\[(\d)\])?{(.+)}', line)
 		for macro in macros:
 			if len(macro[1]) == 0:
 				mathjax_config['Tex']['Macros'][macro[0]] = "{"+macro[3]+"}"
